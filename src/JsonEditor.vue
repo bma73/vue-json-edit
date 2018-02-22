@@ -21,7 +21,7 @@ export default {
                 this.$emit('input', this.makeJson(this.parsedData))
 　　　　　　  },
 　　　　    deep: true
-　　　　}   
+　　　　}
     },
     methods: {
         'jsonParse': function (jsonStr) {
@@ -59,8 +59,8 @@ export default {
                         opt.childParams = null
                         opt.remark = parsedVal
                     }
-                     
-                    result.push(opt)    
+
+                    result.push(opt)
                 })
                 return result
             }
@@ -92,7 +92,7 @@ export default {
                         opt.remark = parsedVal
                     }
 
-                    result.push(opt)        
+                    result.push(opt)
                 }
                 return result
             }
@@ -108,7 +108,7 @@ export default {
 
         'getType': function(obj) {
             switch (Object.prototype.toString.call(obj)) {
-                case '[object Array]': 
+                case '[object Array]':
                     return 'array'
                     break
                 case '[object Object]':
@@ -117,7 +117,7 @@ export default {
                 default:
                     return typeof(obj)
                     break
-            } 
+            }
         },
 
         'makeJson': function (dataArr) {
@@ -157,7 +157,7 @@ export default {
                     } else {
                         r = el.remark
                     }
-                    
+
                     arr.push(r)
                 }
                 return arr
@@ -166,7 +166,7 @@ export default {
             let revertMain = function (data) {
                 let r = revertWithObj(data)
                 return r
-            } 
+            }
 
             return revertMain(dataArr)
         }

@@ -22,7 +22,7 @@
       <!-- -- -->
       <div class="f-btns">
         <button class="pure-button f-confirm" @click="confirm">OK</button>
-        <button class="pure-button" @click="cancel">Cancel</button>
+        <button class="pure-button" @click="cancel">X</button>
       </div>
   </div>
 
